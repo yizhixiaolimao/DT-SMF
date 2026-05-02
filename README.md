@@ -45,6 +45,9 @@ The diagnostic model jointly leverages MRI and tabular clinical information for 
 <p align="center">
   <img src="img/model1.png" alt="Overview of the diagnostic model" width="1000"/>
 </p>
+<p align="center">
+  <img src="img/model2.png" alt="Overview of the diagnostic model" width="1000"/>
+</p>
 
 <h3>Progression Prediction Model</h3>
 
@@ -55,6 +58,7 @@ The progression prediction model estimates disease conversion risk by integratin
 <p align="center">
   <img src="img/model3.png" alt="Overview of the progression prediction model" width="1000"/>
 </p>
+
 ---
 
 ## 📦 Environment
