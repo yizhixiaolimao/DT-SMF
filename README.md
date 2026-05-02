@@ -1,9 +1,9 @@
 # MAG-ADNet
 
-## ✨ Model Structure
+## ✨ Overall Study Overview
 
 <p align="center">
-  <img src="img/model.png" alt="Model Structure" width="1000"/>
+  <img src="img/overview.pdf" alt="Model Structure" width="1000"/>
 </p>
 
 ---
