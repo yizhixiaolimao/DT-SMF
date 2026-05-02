@@ -59,60 +59,83 @@ python main.py
 ---
 
 ## 📊 Results
-<h2 style="color:blue;">Comparative Experiment</h2>
+<h2 style="color:blue;">Overall Evaluation Metrics</h2>
+
 <table>
   <tr>
-    <th rowspan="2">Method</th>
-    <th colspan="6" style="text-align:center;">AD vs CN</th>
-    <th colspan="6" style="text-align:center;">LMCI vs EMCI</th>
+    <th>Models</th>
+    <th>Acc ↑</th>
+    <th>F1 ↑</th>
+    <th>Sen ↑</th>
+    <th>Prec ↑</th>
+    <th>MCC ↑</th>
+    <th>Kappa ↑</th>
   </tr>
+
   <tr>
-    <th>Acc</th>
-    <th>F1</th>
-    <th>Kappa</th>
-    <th>Sen</th>
-    <th>Prec</th>
-    <th>Mcc</th>
-    <th>Acc</th>
-    <th>F1</th>
-    <th>Kappa</th>
-    <th>Sen</th>
-    <th>Prec</th>
-    <th>Mcc</th>
+    <td>DAFT</td>
+    <td>67.80 ± 13.84</td>
+    <td>66.84 ± 12.55</td>
+    <td>70.37 ± 5.73</td>
+    <td>64.71 ± 17.41</td>
+    <td>53.11 ± 17.46</td>
+    <td>51.45 ± 19.94</td>
   </tr>
+
   <tr>
-    <td>Miccai-Fusion</td>
-    <td>86.25</td><td>86.14</td><td>72.29</td><td>86.11</td><td>83.78</td><td>72.32</td>
-    <td>78.06</td><td>76.41</td><td>53.36</td><td>61.54</td><td>81.63</td><td>54.70</td>
+    <td>MMGLF</td>
+    <td>73.76 ± 5.43</td>
+    <td>70.98 ± 7.11</td>
+    <td>61.62 ± 34.98</td>
+    <td>69.12 ± 10.89</td>
+    <td>61.32 ± 7.66</td>
+    <td>59.30 ± 8.91</td>
   </tr>
+
   <tr>
-    <td>ADViT</td>
-    <td>85.00</td><td>84.38</td><td>69.07</td><td>72.22</td><td>92.86</td><td>70.59</td>
-    <td>75.48</td><td>74.46</td><td>49.00</td><td>66.15</td><td>72.88</td><td>49.16</td>
+    <td>PANIC</td>
+    <td><u>79.44 ± 4.73</u></td>
+    <td><u>76.84 ± 5.93</u></td>
+    <td><u>81.10 ± 5.09</u></td>
+    <td><u>77.88 ± 5.84</u></td>
+    <td><u>69.75 ± 6.42</u></td>
+    <td><u>68.12 ± 7.70</u></td>
   </tr>
+
   <tr>
-    <td>Transmf_AD</td>
-    <td>77.50</td><td>76.98</td><td>54.08</td><td>69.44</td><td>78.12</td><td>54.36</td>
-    <td>62.58</td><td>57.78</td><td>20.53</td><td>19.73</td><td>40.00</td><td>47.27</td>
+    <td>MultimodalAD</td>
+    <td>70.53 ± 10.07</td>
+    <td>72.33 ± 8.09</td>
+    <td>76.60 ± 6.06</td>
+    <td>69.54 ± 10.65</td>
+    <td>60.37 ± 10.44</td>
+    <td>56.83 ± 13.72</td>
   </tr>
+
   <tr>
-    <td>MENet</td>
-    <td>87.50</td><td>87.37</td><td>74.75</td><td>86.11</td><td>86.11</td><td>74.75</td>
-    <td>76.13</td><td>73.82</td><td>48.68</td><td>55.38</td><td>81.82</td><td>50.89</td>
+    <td>Hyperfusion</td>
+    <td>71.37 ± 4.23</td>
+    <td>71.19 ± 3.96</td>
+    <td>71.74 ± 4.88</td>
+    <td>71.25 ± 4.63</td>
+    <td>57.70 ± 6.71</td>
+    <td>56.93 ± 6.31</td>
   </tr>
-  <tr>
-    <td>Diamond</td>
-    <td>85.00</td><td>82.53</td><td>71.57</td><td>72.22</td><td><b>96.29</td><td>73.59</td>
-    <td>75.72</td><td>71.42</td><td>51.89</td><td><b>69.23</td><td>73.77</td><td>51.97</td>
-  </tr>
+
   <tr>
     <td><b>Ours</b></td>
-    <td><b>92.50</b></td><td><b>92.42</b></td><td><b>84.85</b></td><td><b>91.67</b></td><td>91.67</b></td><td><b>84.85</b></td>
-    <td><b>81.29</b></td><td><b>80.09</b></td><td><b>60.48</b></td><td>67.69</b></td><td><b>84.61</b></td><td><b>61.46</b></td>
+    <td><b>84.86 ± 2.76</b></td>
+    <td><b>83.46 ± 3.29</b></td>
+    <td><b>85.29 ± 2.00</b></td>
+    <td><b>84.07 ± 3.52</b></td>
+    <td><b>77.38 ± 4.12</b></td>
+    <td><b>76.77 ± 4.24</b></td>
   </tr>
 </table>
 
----
+<p>
+  The best results are shown in <b>bold</b>, and the second-best results are <u>underlined</u>.
+</p>
 
 <h2 style="color:blue;">Ablation Experiment</h2>
 <table>
