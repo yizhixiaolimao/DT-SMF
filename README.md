@@ -1,4 +1,4 @@
-# DT-SMF
+# DT-GML
 
 ## ✨ Overall Study Overview
 
@@ -9,11 +9,11 @@
 ---
 
 ## 💡 Primary Contribution
-- **🧬 Dynamic multimodal framework:** We propose **DT-SMF** for multimodal early Alzheimer's disease analysis using structural MRI and clinical scale information.
+- **🧬 Dynamic multimodal framework:** We propose **DT-GML** for multimodal early Alzheimer's disease analysis using structural MRI and clinical scale information.
 
-- **🩺 SMC-oriented diagnosis:** DT-SMF focuses on **subjective memory complaints (SMC)**, an early and clinically important stage that has received limited attention in previous AD studies.
+- **🩺 SMC-oriented diagnosis:** DT-GML focuses on **subjective memory complaints (SMC)**, an early and clinically important stage that has received limited attention in previous AD studies.
 
-- **🔄 Two-stage clinical pipeline:** DT-SMF jointly supports early cognitive state diagnosis and MCI-to-AD progression prediction within a unified framework.
+- **🔄 Two-stage clinical pipeline:** DT-GML jointly supports early cognitive state diagnosis and MCI-to-AD progression prediction within a unified framework.
 
 - **🔍 Interpretable prediction:** Plasma biomarker correlation and brain-region visualization demonstrate the biological plausibility of model predictions.
 
@@ -167,7 +167,7 @@ python main.py
 <h2 style="color:blue;">Ablation Study</h2>
 
 <p>
-  Overall ablation study results of DT-SMF on ADNI.
+  Overall ablation study results of DT-GML on ADNI.
   The best results are shown in <b>bold</b>.
 </p>
 
@@ -259,7 +259,7 @@ python main.py
 <h2 style="color:blue;">Progression Prediction</h2>
 
 <p>
-  Comparison of DT-SMF against models on the progression prediction task.
+  Comparison of DT-GML against models on the progression prediction task.
   The best results are shown in <b>bold</b>.
 </p>
 
